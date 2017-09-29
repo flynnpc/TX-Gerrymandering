@@ -8,6 +8,8 @@
   <base target="_blank">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+  <link rel="stylesheet" href="Control.Geocoder.css" />
+  <script src="Control.Geocoder.js"></script>
   <script src="jquery-2.1.1.min.js"></script>
   <script src="dis.js"></script>
   <style>
@@ -68,6 +70,9 @@
       fillColor: "#FF4F19",
       fillOpacity: 0.1
     };
+    var geocoder = L.Control.geocoder({
+      position: 'topleft'
+    }).addTo(mymap);
 
     function highlightFeature(e) {
       var layer = e.target;
@@ -92,13 +97,7 @@
         mouseout: resetHighlight
       });
     }
-    // Load district GeoJSON using a jquery ajax call. This had some issues
-    // $.getJSON("districts.geojson", function(data) {
-    //   L.geoJson(data, {
-    //     style: Gstyle,
-    //     onEachFeature: onEachFeature
-    //   }).addTo(mymap);
-    // });
+
     var txdist = L.geoJson(districts, {
       style: Gstyle,
       onEachFeature: onEachFeature
