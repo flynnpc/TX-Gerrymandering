@@ -1,0 +1,104 @@
+.info {
+  padding: 5% 5%;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-top: 5px, 0px;
+}
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+/*Zoom buttons*/
+.leaflet-top.leaflet-right .leaflet-control-zoom-out,
+.leaflet-top.leaflet-left .leaflet-control-zoom-out,
+.leaflet-top.leaflet-left .leaflet-control-loading {
+  border-radius: 0 0 1px 1px;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-bottom: none;
+}
+.leaflet-top.leaflet-left .leaflet-control-zoom {
+  position: absolute;
+  left: 8px;
+  top: 42px;
+  direction: ltr;
+  box-shadow: 0 0 7px #999!important;
+}
+/*Media queries*/
+@media only screen and (min-width: 521px) {
+  .leaflet-top.leaflet-left,
+  .leaflet-sidebar {
+    width: 350px;
+  }
+  .leaflet-control-search .search-cancel {
+    left: 275px;
+  }
+  .leaflet-control-search .search-input {
+    max-width: 300px!important;
+  }
+  .leaflet-top.leaflet-right {
+    top: 0px;
+    z-index: 1000;
+  }
+}
+/*end media queries*/
+/*easyButton bar toggle*/
+#toggle {
+  position: absolute;
+  left: 3px;
+  z-index: 9999;
+}
+.fa-lg {
+  vertical-align: -10%;
+}
+.fa-border {
+  margin: -7px;
+  padding: 3.7px;
+  border: solid .08em #9C9C9C;
+  background: whitesmoke;
+}
+.leaflet-bar a:hover {
+  /*background-color: #fff;*/
+}
+.leaflet-top.leaflet-left .leaflet-control {
+  margin: 5px 1px;
+  box-shadow: none;
+}
+.leaflet-top.leaflet-left .geocoder-control-input {
+  padding: 5px 0 5px 5px;
+  width: 100%;
+  height: 38px;
+  position: absolute;
+  left: 10px!important;
+  top: 5px;
+  background: white;
+  direction: ltr;
+  box-shadow: 0 1px 7px #999!important;
+  font-size: large;
+  border: none;
+  height: 36px;
+}
+.leaflet-top.leaflet-left .geocoder-control-suggestions {
+  direction: ltr;
+}
+/*Extends search text fully*/
+.leaflet-top.leaflet-left .geocoder-control-expanded,
+.leaflet-top.leaflet-left .leaflet-touch .geocoder-control-expanded {
+  margin: 0;
+  width: 100%;
+}
+/*to format map to full screen area; source: http://bl.ocks.org/d3noob/7654694*/
+body {
+  padding: 0;
+  margin: 0;
+}
+html,
+body,
+#map {
+  height: 100%;
+  width: 100%;
+}
