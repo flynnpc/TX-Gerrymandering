@@ -5,7 +5,7 @@ var mymap = L.map('map').setView([31.15, -99.90], 6);
 L.tileLayer('https://{s}.tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey=1d8e4763ba4d434ca9c3ba43b3849775', {
   attribution: 'Pioneer Basemap by Thunderforest, a project by Gravitystorm Limited.'
 }).addTo(mymap);
-// control that shows state info on hover
+// control that shows state info
 var info = L.control();
 // Create the info box that displays feature properties
 info.onAdd = function(map) {
@@ -13,13 +13,15 @@ info.onAdd = function(map) {
   this.update();
   return this._div;
 };
-// Functtion that converts population numbers to notation with commas
+// Function that converts population numbers to notation with commas
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 // method to update the window based on feature properties
 info.update = function(props) {
   this._div.innerHTML = (props ?
+
+    // Review how these would look as p tags instead of br
     '<b>' + props.NAMELSAD + '</b><br />' + '<br />' + 'Total Population: ' + numberWithCommas(props.B02001e1) + '<br /><b>' +
     '<br />' + 'Demographics' + '</b><br />' +
     'White: ' + Math.round(props.B02001e2 / props.B02001e1 * 100) + '%<br />' +

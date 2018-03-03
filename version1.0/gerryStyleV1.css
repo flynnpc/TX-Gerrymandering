@@ -1,6 +1,6 @@
 /* Make changes to the info box and search bar alignment. */
 /* they are not aligned correctly */
-.info {
+/* .info {
   padding: 5% 5%;
   font: 14px/16px Arial, Helvetica, sans-serif;
   background: white;
@@ -8,17 +8,14 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   margin-top: 5px, 0px;
-}
-#d3  {
-  height:300px;
-}
-/* Remove, there are no h4 in the info box */
-.info h4 {
+} */
+
+/* .info h4 {
   margin: 0 0 5px;
-  color: #777;
-}
+  color: #777; */
+/* } */
 /*Zoom buttons*/
-.leaflet-top.leaflet-right .leaflet-control-zoom-out,
+/* .leaflet-top.leaflet-right .leaflet-control-zoom-out,
 .leaflet-top.leaflet-left .leaflet-control-zoom-out,
 .leaflet-top.leaflet-left .leaflet-control-loading {
   border-radius: 0 0 1px 1px;
@@ -33,10 +30,10 @@
   top: 42px;
   direction: ltr;
   box-shadow: 0 0 7px #999!important;
-}
+} */
 /*Media queries*/
 /* These won't be necessary with Bootstrap */
-@media only screen and (min-width: 521px) {
+/* @media only screen and (min-width: 521px) {
   .leaflet-top.leaflet-left,
   .leaflet-sidebar {
     width: 350px;
@@ -51,27 +48,27 @@
     top: 0px;
     z-index: 1000;
   }
-}
+} */
 /*end media queries*/
 /*easyButton bar toggle*/
-#toggle {
+/* #toggle {
   position: absolute;
   left: 3px;
   z-index: 9999;
-}
-no such class
-.fa-lg {
+} */
+
+/* .fa-lg {
   vertical-align: -10%;
-}
-.fa-border {
+} */
+/* .fa-border {
   margin: -7px;
   padding: 3.7px;
   border: solid .08em #9C9C9C;
   background: whitesmoke;
-}
-.leaflet-bar a:hover {
+} */
+/* .leaflet-bar a:hover { */
   /*background-color: #fff;*/
-}
+/* }
 .leaflet-top.leaflet-left .leaflet-control {
   margin: 5px 1px;
   box-shadow: none;
@@ -92,21 +89,27 @@ no such class
 }
 .leaflet-top.leaflet-left .geocoder-control-suggestions {
   direction: ltr;
-}
+} */
 /*Extends search text fully*/
-.leaflet-top.leaflet-left .geocoder-control-expanded,
+/* .leaflet-top.leaflet-left .geocoder-control-expanded,
 .leaflet-top.leaflet-left .leaflet-touch .geocoder-control-expanded {
   margin: 0;
   width: 100%;
-}
-/*to format map to full screen area; source: http://bl.ocks.org/d3noob/7654694*/
-body {
-  padding: 0;
-  margin: 0;
-}
-html,
+} */
+
+/* html,
 body,
+div, */
+#leftInfo{
+  height: 200px;
+}
+#midInfo{
+  height: 200px;
+}
+#rightInfo{
+  height: 200px;
+}
 #map {
-  height: 100%;
+  height: 500px;
   width: 100%;
 }
