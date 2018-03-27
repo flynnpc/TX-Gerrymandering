@@ -17,12 +17,11 @@
 background-image: none;
   font-size: large;
 }
-/* D3 boxes */
+/* Demographic boxes */
 #leftInfo{
   height: 200px;
 }
 #midInfo{
-  /* height: 200px; */
 }
 #rightInfo{
   height: 200px;
