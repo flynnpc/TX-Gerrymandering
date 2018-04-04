@@ -1,5 +1,5 @@
 var elect2016 = {
-  "Congressional District  1": [{
+  "Congressional District 1": [{
     "Name": "Louie Gohmert(I)",
     "Party": "REP",
     "Canvas Votes": "192434",
@@ -20,7 +20,7 @@ var elect2016 = {
     "Canvas Votes": "66",
     "Percent": "0"
   }],
-  "Congressional District  2": [{
+  "Congressional District 2": [{
     "Name": "Ted Poe(I)",
     "Party": "REP",
     "Canvas Votes": "168692",
@@ -41,7 +41,7 @@ var elect2016 = {
     "Canvas Votes": "2884",
     "Percent": "0.01"
   }],
-  "Congressional District  3": [{
+  "Congressional District 3": [{
     "Name": "Sam Johnson(I)",
     "Party": "REP",
     "Canvas Votes": "193684",
@@ -62,7 +62,7 @@ var elect2016 = {
     "Canvas Votes": "2915",
     "Percent": "0.01"
   }],
-  "Congressional District  4": [{
+  "Congressional District 4": [{
     "Name": "John Ratcliffe(I)",
     "Party": "REP",
     "Canvas Votes": "216643",
@@ -73,7 +73,7 @@ var elect2016 = {
     "Canvas Votes": "29577",
     "Percent": "0.12"
   }],
-  "Congressional District  5": [{
+  "Congressional District 5": [{
     "Name": "Jeb Hensarling(I)",
     "Party": "REP",
     "Canvas Votes": "155469",
@@ -84,7 +84,7 @@ var elect2016 = {
     "Canvas Votes": "37406",
     "Percent": "0.19"
   }],
-  "Congressional District  6": [{
+  "Congressional District 6": [{
     "Name": "Joe Barton(I)",
     "Party": "REP",
     "Canvas Votes": "159444",
@@ -100,7 +100,7 @@ var elect2016 = {
     "Canvas Votes": "7185",
     "Percent": "0.03"
   }],
-  "Congressional District  7": [{
+  "Congressional District 7": [{
     "Name": "John Culberson(I)",
     "Party": "REP",
     "Canvas Votes": "143542",
@@ -111,13 +111,13 @@ var elect2016 = {
     "Canvas Votes": "111991",
     "Percent": "0.44"
   }],
-  "Congressional District  8": [{
+  "Congressional District 8": [{
     "Name": "Kevin Brady(I)",
     "Party": "REP",
     "Canvas Votes": "236379",
     "Percent": "1"
   }],
-  "Congressional District  9": [{
+  "Congressional District 9": [{
     "Name": "Jeff Martin",
     "Party": "REP",
     "Canvas Votes": "36491",

@@ -1,3 +1,4 @@
+var elected;
 // Creates the geoJSON variable in the global scope
 var txdist;
 // Style for the congressional district polygon
@@ -51,13 +52,16 @@ function updateMidInfo(districtName) {
 
 function updateRightInfo(district2016) {
   var campaign = (elect2016[district2016]);
-  var results = [];
-  var mostVotes = Math.max(results);
+  $('#election2016 tr').remove();
+  $('#election2016').append("<thead><tr><th>Candidate</th><th>Party</th><th>Votes</th><th>PCT.</th></tr></thead>");
   for (var candidate = 0; candidate < campaign.length; candidate++) {
-    // results.push((campaign[candidate].Name, Number(campaign[candidate].Percent)));
-    // if (campaign[candidate].Percent === mostVotes) {
-    $('#rep').replaceWith("<td id='rep'>" + candidate["Name"] + "</td>");
-    // }
+    let name2016 = campaign[candidate].Name;
+    let party2016 = campaign[candidate].Party;
+    let votes2016 = Number(campaign[candidate]['Canvas Votes']).toLocaleString();
+    let pct2016 = Math.round(campaign[candidate].Percent * 100);
+    let tableResults = ('<tr><td>' + name2016 + '</td><td>' + party2016 +
+      '</td><td>' + votes2016 + '</td><td>' + pct2016 + '%</td></tr>');
+    $('#election2016').append(tableResults);
   }
 }
 
